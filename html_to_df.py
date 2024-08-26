@@ -23,3 +23,4 @@ for row in soup.table.contents[1:]:
 
 df = pd.DataFrame(lists)
 df.columns = columns
+df.to_pickle("root_table.pkl")
