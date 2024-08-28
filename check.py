@@ -93,4 +93,16 @@ for property in recommended[mapping[res_type]]:
 
 # Check which optional properties are present
 
+print("================================")
+
+print("Optional properties PRESENT")
+for property in optional[mapping[res_type]]:
+    if property in results:
+        print("*", property)
+print("================================")
+print("Optional properties MISSING")
+for property in optional[mapping[res_type]]:
+    if property not in results:
+        print("*", property)
+
 # Check which language tags are present (even when they are not needed)
