@@ -47,8 +47,6 @@ for index, row in df.iterrows():
 if __name__ == "__main__":
     id = sys.argv[1]
 
-id = "533800"
-
 url = f"https://arche-curation.acdh-dev.oeaw.ac.at/api/{id}/metadata"
 subject = f"https://arche-curation.acdh-dev.oeaw.ac.at/api/{id}"
 
